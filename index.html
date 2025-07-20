@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frontend Lab - Index</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      color: #f39200;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      color: #222;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #f39200;
+      padding-bottom: 0.5rem;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+
+    ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      gap: 1rem;
+    }
+
+    ul li {
+      background: #f2f2f2;
+      border-radius: 6px;
+      padding: 1rem;
+      text-align: center;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
+    }
+
+    ul li:hover {
+      background: #f39200;
+      box-shadow: 0 4px 14px rgb(243 146 0 / 0.5);
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      display: block;
+      font-size: 1.1rem;
+      user-select: none;
+    }
+
+    ul li:hover a {
+      color: white;
+    }
+
+    @media (max-width: 500px) {
+      body {
+        padding: 1rem;
+      }
+      .container {
+        padding: 1rem;
+      }
+      ul {
+        grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Frontend Lab - Index</h1>
+  <div class="container">
+    <section>
+      <h2>Components</h2>
+      <ul>
+        <li><a href="components/buttons/" target="_blank" rel="noopener">Buttons</a></li>
+        <li><a href="components/navbars/" target="_blank" rel="noopener">Navbars</a></li>
+        <li><a href="components/cards/" target="_blank" rel="noopener">Cards</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Sections</h2>
+      <ul>
+        <li><a href="sections/hero/" target="_blank" rel="noopener">Hero</a></li>
+        <li><a href="sections/contact/" target="_blank" rel="noopener">Contact</a></li>
+        <li><a href="sections/pricing/" target="_blank" rel="noopener">Pricing</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="projects/book_project/" target="_blank" rel="noopener">Book Project</a></li>
+        <li><a href="projects/jholok_project/" target="_blank" rel="noopener">Jholok Project</a></li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
